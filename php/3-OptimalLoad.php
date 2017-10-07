@@ -4,12 +4,15 @@
  * User: russ
  * Date: 10/5/17
  * Time: 2:32 PM
+ */
+
+/**
+ * Bin Packing problem?
+ *
  * @param array $a
  * @param int $capacity
  * @return int
- * @internal param int $load
  */
-
 function OptimalLoad(array $a, int $capacity): int
 {
     $result = 0;
@@ -26,8 +29,9 @@ function OptimalLoad(array $a, int $capacity): int
             $truck_rem -= $a[$i];
         }
     }
+    $result++;
 
-    return ++$result;
+    return $result;
 }
 
 assert(OptimalLoad([9, 8, 2, 2, 5, 4], 10) == 3);
