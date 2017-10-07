@@ -30,7 +30,7 @@ function ArrMax(array $a)
     return $max;
 }
 
-assert(ArrMax([]) === false, 'Failed');
-assert(ArrMax([0]) == 0, 'Failed');
-assert(ArrMax([5, 6, 99]) == 99, 'Failed');
-assert(ArrMax([false, null, true, 1, '99.9', '99', '99.0']) == 99.9, 'Failed');
+assert(ArrMax([]) === false);
+assert(ArrMax([0]) == 0);
+assert(ArrMax([5, 6, 99]) == 99);
+assert(ArrMax([false, null, true, 1, '99.9', '99', '99.0']) == 99.9);

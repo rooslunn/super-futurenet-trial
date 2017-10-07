@@ -31,6 +31,6 @@ function StringConjunction(string $s1, string $s2): string
     return $result;
 }
 
-assert(StringConjunction('', '') == '', 'Failed');
-assert(StringConjunction('TEST', 'VALUE') == 'TVEASLTUE', 'Failed');
-assert(StringConjunction('VALUE', 'TEST') == 'VTAELSUTE', 'Failed');
+assert(StringConjunction('', '') == '');
+assert(StringConjunction('TEST', 'VALUE') == 'TVEASLTUE');
+assert(StringConjunction('VALUE', 'TEST') == 'VTAELSUTE');
